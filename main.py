@@ -53,7 +53,7 @@ left = Frame(root)
 left.config(background = "black")#left frame
 left.pack(side = LEFT, padx = 10)
 
-music_img = PhotoImage(file = "projectImages/music.jpg")
+music_img = PhotoImage(file = "projectImages/music.png")
 music_btn = Button(left, image = music_img)
 music_btn.grid(row = 0, column = 0, padx = 5)
 
@@ -178,12 +178,12 @@ play_btn = Button(middle, image = play_img, command = playfunc)
 play_btn.grid(row = 0, column = 0, padx = 5)
 
 #pause button
-pause_img = PhotoImage(file = "projectImages/pause.jpg")
+pause_img = PhotoImage(file = "projectImages/pause.png")
 pause_btn = Button(middle, image = pause_img, command = pausefunc)
 pause_btn.grid(row = 0, column = 1, pady =5)
 
 #stop button
-stop_img = PhotoImage(file = "projectImages/stop.jpg")
+stop_img = PhotoImage(file = "projectImages/stop.png")
 stop_btn = Button(middle, image = stop_img, command = stopfunc)
 stop_btn.grid(row = 0, column = 2, padx = 5, pady =5)
 
@@ -198,11 +198,11 @@ mute_btn = Button(bottom, image = mute_img, command = mutefunc)
 mute_btn.grid(row = 0, column = 0,padx = 5, pady =5)
 
 #rewind button
-rewind_img = PhotoImage(file = "projectImages/replay.jpg")
+rewind_img = PhotoImage(file = "projectImages/replay.png")
 rewind_btn = Button(bottom, image = rewind_img, command = rewindfunc)
 rewind_btn.grid(row = 0, column = 1,padx = 5, pady = 5)
 
-unmute_img = PhotoImage(file = "projectImages/unmute.jpg")
+unmute_img = PhotoImage(file = "projectImages/volume.png")
 
 vol_scale = Scale(bottom, from_ = 0, to = 100, orient = HORIZONTAL, background = "black", fg = "white", command = volume)
 vol_scale.grid(row = 0, column = 2, padx = 10)
